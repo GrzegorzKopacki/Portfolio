@@ -1,11 +1,12 @@
 import { MainContent } from "../MainContent/MainContent";
+import { Navbar } from "../Navbar/Navbar";
 
 export function Layout() {
 	return (
 		<>
 			<MainContent>
-                <div>HELLO WORLD</div>
-            </MainContent>
+				<Navbar language={"polish"} />
+			</MainContent>
 		</>
 	);
 }
