@@ -10,9 +10,7 @@ export function Navbar({ language }) {
 				{selectedLanguage &&
 					selectedLanguage.navbarItems.map((item, index) => (
 						<li key={index}>
-							<NavLink to={item.link} activeClassName="active">
-								{item.name}
-							</NavLink>
+							<NavLink to={item.link}>{item.name}</NavLink>
 						</li>
 					))}
 			</ul>
