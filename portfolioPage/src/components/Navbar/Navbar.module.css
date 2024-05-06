@@ -1,0 +1,77 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.8rem 2rem;
+	position: sticky;
+	top: 0;
+	background: var(--White);
+	z-index: 100;
+	transition: all 0.4s ease-in-out;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	font-size: 1.8rem;
+	color: white;
+	font-weight: bold;
+	height: 100vh;
+	width: 100vw;
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translateX(100%);
+	transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 1000px) {
+	.menu {
+		position: unset;
+		background: inherit;
+		color: blue;
+		list-style: none;
+		flex-direction: row;
+		height: inherit;
+		width: max-content;
+		gap: 5rem;
+		font-size: 1.2rem;
+		font-weight: normal;
+		align-items: center;
+		transform: translateX(0);
+	}
+
+	.menuLink {
+		position: relative;
+		cursor: pointer;
+	}
+
+	.menuLink::after {
+		content: "";
+		width: 0%;
+		height: 0.2rem;
+		background: black;
+		position: absolute;
+		bottom: -0.2rem;
+		left: 0;
+		border-radius: 2rem;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.menuLink:hover::after {
+		width: 100%;
+	}
+
+	.menuLink:last-child {
+		background: black;
+		padding: 0.5rem 1.5rem;
+		border-radius: 1rem;
+		color: white;
+	}
+
+	.menuLink:last-child::after {
+		display: none;
+	}
+}
