@@ -1,12 +1,17 @@
-.header {
+.header,
+.headerActive {
 	display: flex;
 	justify-content: space-between;
 	padding: 0.8rem 2rem;
 	position: sticky;
 	top: 0;
-	background: var(--White);
+	background: white;
 	z-index: 100;
 	transition: all 0.4s ease-in-out;
+}
+
+.headerActive {
+	box-shadow: rgba(0, 0, 0, 0.062) 0px 3px 5px;
 }
 
 .menu {

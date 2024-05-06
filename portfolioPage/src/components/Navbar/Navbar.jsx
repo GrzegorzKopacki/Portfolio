@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { LANGUAGE } from "../../constants/language";
 import { BurgerButton } from "../BurgerButton/BurgerButton";
 import { SwitchMenu } from "../SwitchMenu/SwitchMenu";
@@ -5,9 +6,10 @@ import styles from "./Navbar.module.css";
 
 export function Navbar({ language }) {
 	const selectedLanguage = LANGUAGE.find((lang) => lang.language === language);
+	const scroll = window.scrollY;
 
 	return (
-		<div className={styles.header}>
+		<div className={scroll > 0 ? styles.headerActive : styles.header}>
 			<SwitchMenu />
 			<ul className={styles.menu}>
 				{selectedLanguage &&
