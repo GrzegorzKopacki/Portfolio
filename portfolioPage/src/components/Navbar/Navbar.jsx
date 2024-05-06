@@ -1,5 +1,4 @@
 import { LANGUAGE } from "../../constants/language";
-import { NavLink } from "react-router-dom";
 
 export function Navbar({ language }) {
 	const selectedLanguage = LANGUAGE.find((lang) => lang.language === language);
@@ -10,7 +9,7 @@ export function Navbar({ language }) {
 				{selectedLanguage &&
 					selectedLanguage.navbarItems.map((item, index) => (
 						<li key={index}>
-							<NavLink to={item.link}>{item.name}</NavLink>
+							<a href={item.link}>{item.name}</a>
 						</li>
 					))}
 			</ul>
