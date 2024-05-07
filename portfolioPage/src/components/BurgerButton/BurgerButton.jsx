@@ -1,8 +1,11 @@
-import styles from "./BurgerButton.module.css"
+import styles from "./BurgerButton.module.css";
 
-export function BurgerButton() {
+export function BurgerButton({ onClick, isActive }) {
 	return (
-		<button className={styles.burgerButton}>
+		<button
+			onClick={onClick}
+			className={isActive ? styles.burgerButton : styles.greenBurgerButton}
+		>
 			<span></span>
 			<span></span>
 			<span></span>
