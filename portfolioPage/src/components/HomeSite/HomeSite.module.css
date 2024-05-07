@@ -1,0 +1,112 @@
+.home {
+	margin-top: 4rem;
+}
+.homeImg {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
+
+.homeContent {
+	font-size: 2.3rem;
+	text-align: center;
+	color: #fff;
+}
+
+.homeContent span {
+	font-size: 1.8rem;
+	display: block;
+}
+
+.homeIcons {
+	background: var(--main);
+	width: max-content;
+	margin: 1rem auto;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	display: flex;
+	gap: 1rem;
+}
+
+.scrollDownButton {
+	width: 1.5rem;
+	height: 5rem;
+	margin: 2rem auto;
+	display: block;
+	border-radius: 1rem;
+	border: 0.2rem solid #52c234;
+	background: none;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.scrollDownCircle {
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+	background: var(--main);
+	animation: circle-jump 1s infinite alternate-reverse;
+}
+
+@keyframes circle-jump {
+	from {
+		transform: translateY(0%);
+	}
+
+	to {
+		transform: translateY(-100%);
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.scrollDownButton {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.home {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 90%;
+		margin: 8rem auto;
+	}
+	.homeImg {
+		order: 2;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.homeContent h1 {
+		font-size: 3.5rem;
+	}
+
+	.homeContent span {
+		font-size: 2.2rem;
+	}
+	.homeImg {
+		padding: 2rem;
+	}
+
+	.homeContent h1 {
+		width: max-content;
+	}
+}
+@media only screen and (min-width: 1650px) {
+	.homeContent {
+		padding-left: 3rem;
+	}
+
+	.home {
+		margin: 4rem auto;
+	}
+
+	.homeContent h1 {
+		font-size: 3.9rem;
+	}
+
+	.homeContent span {
+		font-size: 2.5rem;
+	}
+}

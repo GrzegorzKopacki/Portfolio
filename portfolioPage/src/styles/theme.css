@@ -2,14 +2,7 @@ body {
 	/* Colors */
 	--White: #fff;
 	--DarkWhiteBcg: #fafafa;
-	--main: linear-gradient(
-		to left bottom,
-		#52c234,
-		#48a130,
-		#3f8a2a,
-		#244f19,
-		#1b3910
-	);
+	--main: linear-gradient(to left bottom, #52c234, #48a130, #3f8a2a, #232b2b);
 
 	--secondary: linear-gradient(
 		to right bottom,
