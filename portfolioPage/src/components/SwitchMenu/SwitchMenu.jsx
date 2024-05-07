@@ -2,16 +2,24 @@ import { useState } from "react";
 import styles from "./SwitchMenu.module.css";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
-import UK from "../../assets/uk.png";
+import { LANGUAGE } from "../../constants/language";
 
 export function SwitchMenu() {
 	const [darkMode, setDarkMode] = useState(true);
+
 	return (
-		<div>
-			<button>{darkMode ? <BsMoonStarsFill /> : <FaSun />}</button>
-			<button>
-				<img className={styles.ukFlag} src={UK} />
+		<div className={styles.container}>
+			<button className={styles.SwitchButton}>
+				{darkMode ? (
+					<BsMoonStarsFill className={styles.darkModeIcon} />
+				) : (
+					<FaSun />
+				)}
 			</button>
+			<select className={styles.languageSelector}>
+				<option value={LANGUAGE.language === "polish"}>Polski</option>
+				<option value={LANGUAGE.language === "english"}>English</option>
+			</select>
 		</div>
 	);
 }

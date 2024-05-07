@@ -10,4 +10,11 @@
 body {
 	font-size: 10px;
 	overflow-x: hidden !important;
+    background-color: #232b2b;
+}
+
+a {
+	text-decoration: none;
+	color: var(--textColor);
+	cursor: pointer;
 }

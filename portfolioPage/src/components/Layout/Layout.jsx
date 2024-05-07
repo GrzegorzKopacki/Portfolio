@@ -5,7 +5,7 @@ export function Layout() {
 	return (
 		<>
 			<MainContent>
-				<Navbar language={"polish"} />
+				<Navbar language={"english"} />
 			</MainContent>
 		</>
 	);

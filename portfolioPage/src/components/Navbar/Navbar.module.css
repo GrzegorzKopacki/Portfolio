@@ -5,13 +5,13 @@
 	padding: 0.8rem 2rem;
 	position: sticky;
 	top: 0;
-	background: white;
+	background: #232b2b;
 	z-index: 100;
 	transition: all 0.4s ease-in-out;
 }
 
 .headerActive {
-	box-shadow: rgba(0, 0, 0, 0.062) 0px 3px 5px;
+	box-shadow: rgba(212, 211, 211, 0.062) 0px 3px 5px;
 }
 
 .menu {
@@ -36,13 +36,13 @@
 	.menu {
 		position: unset;
 		background: inherit;
-		color: blue;
+        color: var(--textColor);
 		list-style: none;
 		flex-direction: row;
 		height: inherit;
 		width: max-content;
 		gap: 5rem;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		font-weight: normal;
 		align-items: center;
 		transform: translateX(0);
@@ -57,7 +57,7 @@
 		content: "";
 		width: 0%;
 		height: 0.2rem;
-		background: black;
+		background: var(--main);
 		position: absolute;
 		bottom: -0.2rem;
 		left: 0;
@@ -70,10 +70,14 @@
 	}
 
 	.menuLink:last-child {
-		background: black;
+		background: var(--main);
 		padding: 0.5rem 1.5rem;
 		border-radius: 1rem;
-		color: white;
+	}
+
+	.menuLink:last-child a {
+		color: rgb(255, 255, 255);
+		
 	}
 
 	.menuLink:last-child::after {
