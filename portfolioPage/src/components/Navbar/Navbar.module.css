@@ -54,7 +54,8 @@
 	transition: all 0.5s ease-in-out, opacity 0.3s ease;
 }
 @media only screen and (min-width: 1000px) {
-	.menu {
+	.menu,
+	.menuActive {
 		position: unset;
 		background: inherit;
 		color: var(--textColor);
