@@ -13,12 +13,12 @@ export function Navbar({ language }) {
 		setNavMobileisActive((prevState) => !prevState);
 	}
 
-	function handleLinkClick(event) {
-		event.preventDefault();
-		if (window.innerWidth <= 1000) {
-			setNavMobileisActive(false);
-		}
-	}
+	// function handleLinkClick(event) {
+	// 	event.preventDefault();
+	// 	if (window.innerWidth <= 1000) {
+	// 		setNavMobileisActive(false);
+	// 	}
+	// }
 
 	return (
 		<div className={styles.header}>
@@ -27,9 +27,7 @@ export function Navbar({ language }) {
 				{selectedLanguage &&
 					selectedLanguage.navbarItems.map((item, index) => (
 						<li className={styles.menuLink} key={index}>
-							<a href={item.link} onClick={handleLinkClick}>
-								{item.name}
-							</a>
+							<a href={item.link}>{item.name}</a>
 						</li>
 					))}
 			</ul>
