@@ -3,7 +3,8 @@ export const LANGUAGE = [
 		language: "polish",
 		navbarItems: [
 			{ name: "Home", link: "#home" },
-			{ name: "O nas", link: "#about" },
+			{ name: "O mnie", link: "#about" },
+			{ name: "Umiejętności", link: "#skills" },
 			{ name: "Projekty", link: "#projects" },
 			{ name: "Kontakt", link: "#contact" },
 		],
@@ -13,6 +14,7 @@ export const LANGUAGE = [
 		navbarItems: [
 			{ name: "Home", link: "#home" },
 			{ name: "About Me", link: "#about" },
+			{ name: "Skills", link: "#skills" },
 			{ name: "Projects", link: "#projects" },
 			{ name: "Contact", link: "#contact" },
 		],
