@@ -13,17 +13,13 @@ export function Navbar({ language }) {
 		setNavMobileisActive((prevState) => !prevState);
 	}
 
-	// function handleLinkClick(event) {
-	// 	event.preventDefault();
-	// 	if (window.innerWidth <= 1000) {
-	// 		setNavMobileisActive(false);
-	// 	}
-	// }
-
 	return (
 		<div className={styles.header}>
 			<SwitchMenu />
-			<ul className={navMobileisActive ? styles.menuActive : styles.menu}>
+			<ul
+				className={navMobileisActive ? styles.menuActive : styles.menu}
+				onClick={() => setNavMobileisActive(false)}
+			>
 				{selectedLanguage &&
 					selectedLanguage.navbarItems.map((item, index) => (
 						<li className={styles.menuLink} key={index}>

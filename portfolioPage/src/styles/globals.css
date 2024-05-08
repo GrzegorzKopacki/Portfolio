@@ -7,6 +7,10 @@
 	font-family: "Montserrat", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-size: 10px;
 	overflow-x: hidden !important;
@@ -18,4 +22,3 @@ a {
 	color: var(--textColor);
 	cursor: pointer;
 }
-
