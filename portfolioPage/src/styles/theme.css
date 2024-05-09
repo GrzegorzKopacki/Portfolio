@@ -6,11 +6,11 @@ body {
 
 	--secondary: linear-gradient(
 		to right bottom,
-		#fd4d3e,
-		#fe315c,
-		#f61a7a,
-		#e51b97,
-		#c830b3
+		#52c234,
+		#48a130,
+		#3f8a2a,
+		#52c234,
+		#232b2b
 	);
 
 	--textColor: #fff;
@@ -50,10 +50,10 @@ body {
 	--shadowHover: rgba(143, 143, 143, 0.212) 0px 5px 15px;
 
 	/* Animation states */
-	--shadowAnimationStart: rgba(240, 46, 170, 0.4) 0px 0px,
-		rgba(240, 46, 170, 0.3) 0px 0px, rgba(240, 46, 170, 0.2) 0px 0px,
-		rgba(240, 46, 170, 0.1) 0px 0px, rgba(240, 46, 170, 0.05) 0px 0px;
-	--shadowAnimationEnd: rgba(240, 46, 170, 0.4) 5px 5px,
-		rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
-		rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+	--shadowAnimationStart: rgba(82, 194, 52, 0.4) 0px 0px,
+		rgba(82, 194, 52, 0.3) 0px 0px, rgba(82, 194, 52, 0.2) 0px 0px,
+		rgba(72, 161, 48, 0.1) 0px 0px, rgba(72, 161, 48, 0.05) 0px 0px;
+	--shadowAnimationEnd: rgba(82, 194, 52, 0.4) 5px 5px,
+		rgba(82, 194, 52, 0.3) 10px 10px, rgba(82, 194, 52, 0.2) 15px 15px,
+		rgba(72, 161, 48, 0.1) 20px 20px, rgba(72, 161, 48, 0.05) 25px 25px;
 }
