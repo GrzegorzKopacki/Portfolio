@@ -4,7 +4,7 @@ import { BurgerButton } from "../BurgerButton/BurgerButton";
 import { SwitchMenu } from "../SwitchMenu/SwitchMenu";
 import styles from "./Navbar.module.css";
 
-export function Navbar({ language }) {
+export function Navbar({ language, onChange }) {
 	const selectedLanguage = LANGUAGE.find((lang) => lang.language === language);
 
 	const [navMobileisActive, setNavMobileisActive] = useState(false);
@@ -15,7 +15,7 @@ export function Navbar({ language }) {
 
 	return (
 		<div className={styles.header}>
-			<SwitchMenu />
+			<SwitchMenu onChange={onChange} />
 			<ul
 				className={navMobileisActive ? styles.menuActive : styles.menu}
 				onClick={() => setNavMobileisActive(false)}
