@@ -1,0 +1,110 @@
+.technologiesTitle {
+	padding: 0.4rem;
+	border-bottom: 2px solid var(--textColor);
+	width: max-content;
+	margin-left: 0.5rem;
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: var(--textColor);
+	padding-right: 5rem;
+}
+
+.technologiesIcons {
+	display: flex;
+}
+.techIcon {
+	
+	margin: 0.8rem;
+    font-size: 4rem;
+}
+
+.technologiesContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding: 2rem;
+	flex-wrap: wrap;
+}
+
+.technologiesItem {
+	padding: 2rem;
+	box-shadow: var(--shadow);
+	border-radius: 1rem;
+	transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.technologiesItem:hover {
+	box-shadow: var(--shadowHover);
+}
+
+.technologiesItem img {
+	width: 6rem;
+	height: 6rem;
+}
+
+.technologiesItemTitle {
+	text-align: center;
+	margin-top: 1rem;
+	font-size: 1rem;
+	color: var(--textLightColor);
+}
+
+.technologiesContainer {
+	margin: 5rem auto 2rem auto;
+}
+
+@media only screen and (min-width: 1500px) {
+	.technologiesItem {
+		margin: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.technologiesTitle {
+		font-size: 1rem;
+	}
+}
+
+.sectionTitle {
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 10rem auto 5rem auto;
+	position: relative;
+	width: max-content;
+}
+
+.sectionTitleMain {
+	background: var(--secondary);
+	color: var(--White);
+	padding: 0.4rem;
+	border-top-left-radius: 1rem;
+}
+
+.sectionTitleSub {
+	color: var(--textColor);
+}
+.sectionTitleMain::after {
+	content: "";
+	height: 1.2rem;
+	width: 1.2rem;
+	position: absolute;
+	bottom: -1.5rem;
+	right: -1.5rem;
+	background: var(--secondary);
+	border-bottom-right-radius: 0.5rem;
+	animation: 1s ease-in-out infinite alternate-reverse squareShadow;
+}
+
+@keyframes squareShadow {
+	from {
+		box-shadow: var(--shadowAnimationStart);
+	}
+
+	to {
+		box-shadow: var(--shadowAnimationEnd);
+	}
+}

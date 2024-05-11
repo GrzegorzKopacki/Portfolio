@@ -32,16 +32,16 @@ export const SKILLS = [
 		name: "JavaScript",
 	},
 	{
-		id: 4,
-		icon: <FaReact />,
-		color: "#2563eb",
-		name: "React",
-	},
-	{
 		id: 5,
 		icon: <SiTypescript />,
 		color: "#3b82f6",
 		name: "TypeScript",
+	},
+	{
+		id: 4,
+		icon: <FaReact />,
+		color: "#2563eb",
+		name: "React",
 	},
 
 	{
@@ -63,12 +63,12 @@ export const SKILLS = [
 		color: "#bf1363",
 		name: "SCSS/SASS",
 	},
-	{
-		id: 9,
-		icon: <SiStyledcomponents />,
-		color: "#f59e0b",
-		name: "Styled-Components",
-	},
+	// {
+	// 	id: 9,
+	// 	icon: <SiStyledcomponents />,
+	// 	color: "#f59e0b",
+	// 	name: "Styled-Components",
+	// },
 	{
 		id: 10,
 		icon: <TbBrandNextjs />,

@@ -1,17 +1,18 @@
 import { SKILLS } from "../../constants/SkillsData";
+import styles from "./SkillsSection.module.css";
 
 export function SkillsSection() {
 	return (
-		<div id="skills" className="section technologies-container">
-			<div className="section-title">
-				<p className="section-title-main">Techn</p>
-				<span className="section-title-sub">ologies</span>
+		<div id="skills" className={styles.technologiesContainer}>
+			<div className={styles.sectionTitle}>
+				<p className={styles.sectionTitleMain}>Techn</p>
+				<span className={styles.sectionTitleSub}>ologies</span>
 			</div>
-			<section className="technologies-content">
+			<section className={styles.technologiesContent}>
 				{SKILLS.map((skill) => (
-					<div key={skill.id}>
-						<div style={{ color: skill.color }}>{skill.icon}</div>
-						<p>{skill.name}</p>
+					<div className={styles.technologiesItem} key={skill.id}>
+						<div className={styles.techIcon} style={{ color: skill.color }}>{skill.icon}</div>
+                        <p className={styles.technologiesItemTitle}>{skill.name}</p>
 					</div>
 				))}
 			</section>
