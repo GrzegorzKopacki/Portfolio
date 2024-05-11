@@ -8,9 +8,9 @@ import { SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiVite } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
-import { SiStyledcomponents } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { TbBrandFirebase } from "react-icons/tb";
+import { SiReactrouter } from "react-icons/si";
 
 export const SKILLS = [
 	{
@@ -42,6 +42,12 @@ export const SKILLS = [
 		icon: <FaReact />,
 		color: "#2563eb",
 		name: "React",
+	},
+	{
+		id: 13,
+		icon: <SiReactrouter />,
+		color: "#ed474a",
+		name: "React Router",
 	},
 	{
 		id: 6,
@@ -88,4 +94,5 @@ export const SKILLS = [
 		color: "#ed474a",
 		name: "Firebase",
 	},
+
 ];
