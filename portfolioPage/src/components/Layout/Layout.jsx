@@ -4,6 +4,7 @@ import { Home } from "../../views/Home/Home";
 import { MainContent } from "../MainContent/MainContent";
 import { Navbar } from "../Navbar/Navbar";
 import { Skills } from "../../views/Skills/Skills";
+import { ProjectsSection } from "../ProjectsSection/ProjectsSection";
 
 export function Layout() {
 	const [language, setLanguage] = useState("english");
@@ -19,6 +20,7 @@ export function Layout() {
 				<Home />
 				<About />
 				<Skills />
+				<ProjectsSection />
 			</MainContent>
 		</>
 	);

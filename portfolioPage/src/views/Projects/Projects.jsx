@@ -1,3 +1,5 @@
+import { ProjectsSection } from "../../components/ProjectsSection/ProjectsSection";
+
 export function Projects() {
-    return <></>
+	return <ProjectsSection />;
 }
