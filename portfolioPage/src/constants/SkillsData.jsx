@@ -32,63 +32,58 @@ export const SKILLS = [
 		name: "JavaScript",
 	},
 	{
-		id: 5,
+		id: 4,
 		icon: <SiTypescript />,
 		color: "#3b82f6",
 		name: "TypeScript",
 	},
 	{
-		id: 4,
+		id: 5,
 		icon: <FaReact />,
 		color: "#2563eb",
 		name: "React",
 	},
-
 	{
 		id: 6,
+		icon: <TbBrandNextjs />,
+		color: "#94a3b8",
+		name: "Next",
+	},
+
+	{
+		id: 7,
 		icon: <FaNodeJs />,
 		color: "#22c55e",
 		name: "Node",
 	},
 
 	{
-		id: 7,
+		id: 8,
 		icon: <SiTailwindcss />,
 		color: "#06b6d4",
 		name: "Tailwind",
 	},
 	{
-		id: 8,
+		id: 9,
 		icon: <FaSass />,
 		color: "#bf1363",
 		name: "SCSS/SASS",
 	},
-	// {
-	// 	id: 9,
-	// 	icon: <SiStyledcomponents />,
-	// 	color: "#f59e0b",
-	// 	name: "Styled-Components",
-	// },
+
 	{
 		id: 10,
-		icon: <TbBrandNextjs />,
-		color: "#94a3b8",
-		name: "Next",
-	},
-	{
-		id: 11,
 		icon: <SiVite />,
 		color: "#7c3aed",
 		name: "Vite",
 	},
 	{
-		id: 12,
+		id: 11,
 		icon: <FaGitAlt />,
 		color: "#ed474a",
 		name: "Git",
 	},
 	{
-		id: 13,
+		id: 12,
 		icon: <TbBrandFirebase />,
 		color: "#ed474a",
 		name: "Firebase",

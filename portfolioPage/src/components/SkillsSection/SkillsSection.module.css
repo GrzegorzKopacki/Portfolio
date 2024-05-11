@@ -13,9 +13,8 @@
 	display: flex;
 }
 .techIcon {
-	
 	margin: 0.8rem;
-    font-size: 4rem;
+	font-size: 4rem;
 }
 
 .technologiesContent {
@@ -32,8 +31,8 @@
 	box-shadow: var(--shadow);
 	border-radius: 1rem;
 	transition: all 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .technologiesItem:hover {
@@ -56,9 +55,13 @@
 	margin: 5rem auto 2rem auto;
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1700px) {
 	.technologiesItem {
 		margin: 2rem;
+	}
+	.techIcon {
+		margin: 0.8rem;
+		font-size: 6rem;
 	}
 }
 
