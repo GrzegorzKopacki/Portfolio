@@ -12,9 +12,10 @@
 }
 
 .projectContentCard img {
-	width: 70%;
-	display: block;
+	width: 100%;
+	/* display: block; */
 	margin: 0 auto;
+    padding: 0.4rem;
 }
 
 .projectInfo {
@@ -29,7 +30,7 @@
 	font-weight: bold;
 	color: var(--textColor);
 	padding-right: 3rem;
-	border-bottom: 2px solid var(--textColor);
+    border-bottom: 2px solid rgba(82, 194, 52, 0.5);
 }
 .projectLink img {
 	width: 1.6rem;
@@ -41,7 +42,29 @@
 	font-size: 1.2rem;
 	padding: 0.4rem;
 	text-align: justify;
-	color: var(--textLightColor);
+	color: var(--textColor);
+}
+
+.technologiesIcons {
+	list-style: none;
+	display: flex;
+    flex-wrap: wrap;
+	gap: 1rem;
+	font-size: 1rem;
+	color: var(--textColor);
+	padding: 0.4rem;
+}
+
+.technologiesIcons li {
+	border: 1px solid rgba(82, 194, 52, 0.5);
+	padding: 0.4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+    &:hover {
+        border: 1px solid rgba(82, 194, 52, 0.9);
+
+    }
 }
 
 @media only screen and (min-width: 1000px) {

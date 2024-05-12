@@ -1,40 +1,40 @@
-
+import TEST from "../assets/test.jpg";
 
 export const PROJECTS = [
 	{
 		id: 1,
 		title: "some title",
-		image: "some image",
+		image: TEST,
 		live: "some link",
 		github: "some github",
-		technologies: ["tech", "zmech", "wech", "tech", "tech"],
+		technologies: ["JavaScript", "React", "React Router", "Vite"],
 		description: "some text",
 	},
 	{
 		id: 2,
 		title: "some title",
-		image: "some image",
+		image: TEST,
 		live: "some link",
 		github: "some github",
-		technologies: ["tech", "tech", "tech", "tech", "tech"],
+		technologies: ["JavaScript", "React", "Firebase", "Vite"],
 		description: "some description",
 	},
 	{
 		id: 3,
 		title: "some title",
-		image: "some image",
+		image: TEST,
 		live: "some link",
 		github: "some github",
-		technologies: ["tech", "tech", "tech", "tech", "tech"],
+		technologies: ["TypeScript", "Next.js", "React", "Vite"],
 		description: "some description",
 	},
 	{
 		id: 4,
 		title: "some title",
-		image: "some image",
+		image: TEST,
 		live: "some link",
 		github: "some github",
-		technologies: ["tech", "tech", "tech", "tech", "tech"],
+		technologies: ["JavaScript", "React", "Vite"],
 		description: "some description",
 	},
 ];

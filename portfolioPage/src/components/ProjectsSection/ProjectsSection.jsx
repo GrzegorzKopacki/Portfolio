@@ -1,6 +1,7 @@
 import styles from "./ProjectsSection.module.css";
 import { PROJECTS } from "../../constants/projects";
 import { LANGUAGE } from "../../constants/language";
+import  TEST  from "../../assets/test.jpg";
 
 export function ProjectsSection({ language }) {
 	const selectedLanguage = LANGUAGE.find((lang) => lang.language === language);
@@ -15,7 +16,7 @@ export function ProjectsSection({ language }) {
 				{PROJECTS.map((project) => (
 					<div key={project.id} className={styles.projectContentCard}>
 						<img src={project.image} />
-						<div class="project-info">
+						<div className={styles.projectInfo}>
 							<p className={styles.projectName}>{project.title}</p>
 						</div>
 						{selectedLanguage.projects.map((projectLang, index) => (
@@ -25,7 +26,6 @@ export function ProjectsSection({ language }) {
 						))}
 
 						<div className={styles.projectTechnologies}>
-							<p className={styles.technologiesTitle}>technologies used:</p>
 							<ul className={styles.technologiesIcons}>
 								{project.technologies.map((tech, index) => (
 									<li key={index}>{tech}</li>
