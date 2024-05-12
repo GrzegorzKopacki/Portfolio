@@ -1,7 +1,6 @@
 import styles from "./ProjectsSection.module.css";
 import { PROJECTS } from "../../constants/projects";
 import { LANGUAGE } from "../../constants/language";
-import  TEST  from "../../assets/test.jpg";
 
 export function ProjectsSection({ language }) {
 	const selectedLanguage = LANGUAGE.find((lang) => lang.language === language);
@@ -15,7 +14,9 @@ export function ProjectsSection({ language }) {
 			<div className={styles.projectsContent}>
 				{PROJECTS.map((project) => (
 					<div key={project.id} className={styles.projectContentCard}>
-						<img src={project.image} />
+						<div className={styles.imageContainer}>
+							<img src={project.image} className={styles.projectImage} />
+						</div>
 						<div className={styles.projectInfo}>
 							<p className={styles.projectName}>{project.title}</p>
 						</div>

@@ -44,7 +44,7 @@ body {
 	--textColorHover: #26224b;
 
 	/* Box shadow style */
-	--shadow: rgba(0, 0, 0, 0.062) 0px 3px 5px;
+	--shadow: rgba(255, 255, 255, 0.2) 0px 3px 5px;
 
 	/* Box shadow hovers */
 	--shadowHover: rgba(143, 143, 143, 0.212) 0px 5px 15px;

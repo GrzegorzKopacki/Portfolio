@@ -1,10 +1,11 @@
 import TEST from "../assets/test.jpg";
+import ONE from "../assets/projectOneHero.png";
 
 export const PROJECTS = [
 	{
 		id: 1,
 		title: "some title",
-		image: TEST,
+		image: ONE,
 		live: "some link",
 		github: "some github",
 		technologies: ["JavaScript", "React", "React Router", "Vite"],
@@ -13,7 +14,7 @@ export const PROJECTS = [
 	{
 		id: 2,
 		title: "some title",
-		image: TEST,
+		image: ONE,
 		live: "some link",
 		github: "some github",
 		technologies: ["JavaScript", "React", "Firebase", "Vite"],
@@ -22,7 +23,7 @@ export const PROJECTS = [
 	{
 		id: 3,
 		title: "some title",
-		image: TEST,
+		image: ONE,
 		live: "some link",
 		github: "some github",
 		technologies: ["TypeScript", "Next.js", "React", "Vite"],
@@ -31,7 +32,7 @@ export const PROJECTS = [
 	{
 		id: 4,
 		title: "some title",
-		image: TEST,
+		image: ONE,
 		live: "some link",
 		github: "some github",
 		technologies: ["JavaScript", "React", "Vite"],

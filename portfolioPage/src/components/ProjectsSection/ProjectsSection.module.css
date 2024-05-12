@@ -8,14 +8,32 @@
 	margin: 5rem auto;
 	width: 85%;
 	box-shadow: var(--shadow);
-	padding: 1rem;
+	padding: 2rem;
 }
 
-.projectContentCard img {
+.imageContainer {
 	width: 100%;
-	/* display: block; */
-	margin: 0 auto;
-    padding: 0.4rem;
+	overflow: hidden;
+	border-radius: 12px;
+	padding: 0.4rem;
+}
+
+.projectImage {
+	width: 100%;
+	border-radius: 12px;
+	transition: all 0.3s;
+}
+
+/* .projectContentCard:nth-child(even) img {
+	transform: rotate(1deg);
+}
+
+.projectContentCard:nth-child(odd) img {
+	transform: rotate(-1deg);
+} */
+
+.projectContentCard img:hover {
+	transform: rotate(25deg) scale(1.6);
 }
 
 .projectInfo {
@@ -30,7 +48,7 @@
 	font-weight: bold;
 	color: var(--textColor);
 	padding-right: 3rem;
-    border-bottom: 2px solid rgba(82, 194, 52, 0.5);
+	border-bottom: 2px solid rgba(82, 194, 52, 0.5);
 }
 .projectLink img {
 	width: 1.6rem;
@@ -48,7 +66,7 @@
 .technologiesIcons {
 	list-style: none;
 	display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	gap: 1rem;
 	font-size: 1rem;
 	color: var(--textColor);
@@ -61,10 +79,9 @@
 	padding-left: 1rem;
 	padding-right: 1rem;
 
-    &:hover {
-        border: 1px solid rgba(82, 194, 52, 0.9);
-
-    }
+	&:hover {
+		border: 1px solid rgba(82, 194, 52, 0.9);
+	}
 }
 
 @media only screen and (min-width: 1000px) {
