@@ -17,8 +17,8 @@ export function SwitchMenu({ onChange }) {
 				)}
 			</button>
 			<select onChange={onChange} className={styles.languageSelector}>
-				<option value={LANGUAGE.language === "polish"}>Polski</option>
 				<option value={LANGUAGE.language === "english"}>English</option>
+				<option value={LANGUAGE.language === "polish"}>Polski</option>
 			</select>
 		</div>
 	);

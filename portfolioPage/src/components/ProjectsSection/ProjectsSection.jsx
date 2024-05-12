@@ -1,33 +1,40 @@
 import styles from "./ProjectsSection.module.css";
 import { PROJECTS } from "../../constants/projects";
+import { LANGUAGE } from "../../constants/language";
 
-export function ProjectsSection() {
+export function ProjectsSection({ language }) {
+	const selectedLanguage = LANGUAGE.find((lang) => lang.language === language);
 	return (
-		<section class="projects">
-			<div class="section-title">
-				<p class="section-title-main">Proj</p>
-				<span class="section-title-sub">ects</span>
+		<section id="projects" className={styles.projects}>
+			<div className={styles.sectionTitle}>
+				<p className={styles.sectionTitleMain}>Proj</p>
+				<span className={styles.sectionTitleSub}>ects</span>
 			</div>
 
-			<div class="projects-content">
+			<div className={styles.projectsContent}>
 				{PROJECTS.map((project) => (
-					<div key={project.id} class="project-content-card">
+					<div key={project.id} className={styles.projectContentCard}>
 						<img src={project.image} />
 						<div class="project-info">
-							<p class="project-name">{project.title}</p>
+							<p className={styles.projectName}>{project.title}</p>
 						</div>
-						<p class="project-description">{project.description}</p>
-						<div class="project-technologies">
-							<p class="technologies-title">technologies used:</p>
-							<ul class="technologies-icons">
+						{selectedLanguage.projects.map((projectLang, index) => (
+							<p key={index} className={styles.projectDescription}>
+								{projectLang.description}
+							</p>
+						))}
+
+						<div className={styles.projectTechnologies}>
+							<p className={styles.technologiesTitle}>technologies used:</p>
+							<ul className={styles.technologiesIcons}>
 								{project.technologies.map((tech, index) => (
 									<li key={index}>{tech}</li>
 								))}
 							</ul>
 						</div>
 						<div>
-							<a href={project.live}>Check Live</a>
-							<a href={project.github}>See Code</a>
+							<a href={project.live}>Check live</a>
+							<a href={project.github}>See code</a>
 						</div>
 					</div>
 				))}
