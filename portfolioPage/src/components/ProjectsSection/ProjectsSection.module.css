@@ -9,6 +9,9 @@
 	width: 85%;
 	box-shadow: var(--shadow);
 	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	height: 80%;
 }
 
 .imageContainer {
@@ -23,14 +26,6 @@
 	border-radius: 12px;
 	transition: all 0.3s;
 }
-
-/* .projectContentCard:nth-child(even) img {
-	transform: rotate(1deg);
-}
-
-.projectContentCard:nth-child(odd) img {
-	transform: rotate(-1deg);
-} */
 
 .projectContentCard img:hover {
 	transform: rotate(25deg) scale(1.6);
@@ -82,6 +77,21 @@
 	&:hover {
 		border: 1px solid rgba(82, 194, 52, 0.9);
 	}
+}
+
+.linkContainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.4rem;
+    margin-top: auto;
+}
+
+.linkContainer a {
+	cursor: pointer;
+	padding: 0.8rem;
+	border: 1px solid #52c234;
+    font-size: 1rem;
+    border-radius: 12px;
 }
 
 @media only screen and (min-width: 1000px) {

@@ -33,7 +33,7 @@ export function ProjectsSection({ language }) {
 								))}
 							</ul>
 						</div>
-						<div>
+						<div className={styles.linkContainer}>
 							<a href={project.live}>Check live</a>
 							<a href={project.github}>See code</a>
 						</div>
