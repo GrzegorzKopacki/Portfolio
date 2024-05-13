@@ -33,10 +33,12 @@ export function ProjectsSection({ language }) {
 								))}
 							</ul>
 						</div>
-						<div className={styles.linkContainer}>
-							<a href={project.live}>Check live</a>
-							<a href={project.github}>See code</a>
-						</div>
+						{selectedLanguage.projects.map((linkLang, index) => (
+							<div className={styles.linkContainer} key={index}>
+								<a href={project.live}>{linkLang.live}</a>
+								<a href={project.github}>{linkLang.github}</a>
+							</div>
+						))}
 					</div>
 				))}
 			</div>
