@@ -11,6 +11,7 @@
 	flex-direction: column;
 	width: 100%;
 	font-size: 16px;
+	padding: 1.5rem;
 }
 
 .input {
@@ -20,10 +21,11 @@
 	outline: none;
 	border-radius: 5px;
 	border: 1px solid var(--textLightColor);
-    background: var(--textLightColor);
+	background: var(--textLightColor);
+	width: 50%;
 
 	&:focus {
-		border: 2px solid rgba(0, 206, 158, 1);
+		border: 2px solid #52c234;
 	}
 }
 
@@ -37,10 +39,11 @@
 	outline: none;
 	border-radius: 5px;
 	border: 1px solid var(--textLightColor);
-    background: var(--textLightColor);
+	background: var(--textLightColor);
+	color: var(--textColor);
 
 	&:focus {
-		border: 2px solid rgba(0, 206, 158, 1);
+		border: 2px solid #52c234;
 	}
 }
 
