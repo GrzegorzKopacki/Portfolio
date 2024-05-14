@@ -84,7 +84,11 @@ export function ContactForm() {
 	};
 
 	return (
-		<div className={styles.formContainer}>
+		<div id="contact" className={styles.formContainer}>
+			<div className={styles.sectionTitle}>
+				<p className={styles.sectionTitleMain}>Send Me A</p>
+				<span className={styles.sectionTitleSub}>Message</span>
+			</div>
 			<form className={styles.form} ref={form} onSubmit={sendEmail}>
 				<label className={styles.label}>Name</label>
 				<input className={styles.input} type="text" name="user_name" />

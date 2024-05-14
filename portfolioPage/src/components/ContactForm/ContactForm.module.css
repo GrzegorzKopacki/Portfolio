@@ -1,5 +1,8 @@
 .formContainer {
-	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .form {
@@ -16,7 +19,8 @@
 	padding: 7px;
 	outline: none;
 	border-radius: 5px;
-	border: 1px solid rgb(220, 220, 220);
+	border: 1px solid var(--textLightColor);
+    background: var(--textLightColor);
 
 	&:focus {
 		border: 2px solid rgba(0, 206, 158, 1);
@@ -27,12 +31,13 @@
 	max-width: 100%;
 	min-width: 100%;
 	width: 100%;
-	max-height: 100px;
-	min-height: 100px;
+	max-height: 300px;
+	min-height: 200px;
 	padding: 7px;
 	outline: none;
 	border-radius: 5px;
-	border: 1px solid rgb(220, 220, 220);
+	border: 1px solid var(--textLightColor);
+    background: var(--textLightColor);
 
 	&:focus {
 		border: 2px solid rgba(0, 206, 158, 1);
@@ -41,12 +46,83 @@
 
 .label {
 	margin-top: 1rem;
+	color: var(--textColor);
 }
 
-.input[type="submit"] {
-	margin-top: 2rem;
-	cursor: pointer;
-	background: rgb(249, 105, 14);
-	color: white;
+.submit {
+	background: var(--main);
 	border: none;
+	color: var(--White);
+	width: 50%;
+	font-size: 1rem;
+	display: block;
+	margin: 10px auto;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+	.form {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 1150px) {
+	.form {
+		padding: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.formContainer {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media only screen and (min-width: 1800px) {
+	.formContainer {
+		width: 65%;
+		margin: 0 auto;
+	}
+}
+
+.sectionTitle {
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 10rem auto 5rem auto;
+	position: relative;
+	width: max-content;
+}
+
+.sectionTitleMain {
+	background: var(--secondary);
+	color: var(--White);
+	padding: 0.4rem;
+	border-top-left-radius: 1rem;
+}
+
+.sectionTitleSub {
+	color: var(--textColor);
+}
+.sectionTitleMain::after {
+	content: "";
+	height: 1.2rem;
+	width: 1.2rem;
+	position: absolute;
+	bottom: -1.5rem;
+	right: -1.5rem;
+	background: var(--secondary);
+	border-bottom-right-radius: 0.5rem;
+	animation: 1s ease-in-out infinite alternate-reverse squareShadow;
+}
+
+@keyframes squareShadow {
+	from {
+		box-shadow: var(--shadowAnimationStart);
+	}
+
+	to {
+		box-shadow: var(--shadowAnimationEnd);
+	}
 }
