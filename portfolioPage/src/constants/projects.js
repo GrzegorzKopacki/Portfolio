@@ -9,7 +9,7 @@ export const PROJECTS = [
 		live: "some link",
 		github: "some github",
 		technologies: ["JavaScript", "React", "React Router", "Vite"],
-		description: "some text",
+		
 	},
 	{
 		id: 2,
@@ -18,7 +18,7 @@ export const PROJECTS = [
 		live: "some link",
 		github: "some github",
 		technologies: ["JavaScript", "React", "Firebase", "Vite"],
-		description: "some description",
+	
 	},
 	{
 		id: 3,
@@ -27,7 +27,7 @@ export const PROJECTS = [
 		live: "some link",
 		github: "some github",
 		technologies: ["TypeScript", "Next.js", "React", "Vite"],
-		description: "some description",
+	
 	},
 	{
 		id: 4,
@@ -36,6 +36,6 @@ export const PROJECTS = [
 		live: "some link",
 		github: "some github",
 		technologies: ["JavaScript", "React", "Vite"],
-		description: "some description",
+		
 	},
 ];

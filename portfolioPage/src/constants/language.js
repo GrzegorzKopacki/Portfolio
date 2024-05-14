@@ -16,6 +16,13 @@ export const LANGUAGE = [
 				github: "Zobacz kod",
 			},
 		],
+
+		skills: [
+			{
+				title: "Technologie",
+				subtitle: "Oto niektóre z technologii, których używałem ",
+			},
+		],
 	},
 	{
 		language: "english",
@@ -32,6 +39,12 @@ export const LANGUAGE = [
 					"In a magical garden full of colorful flowers, three friends met: an owl, a rabbit, and a hedgehog. They talked about their dreams and plans for the future, while admiring the sunset painting the sky with pink and orange hues.",
 				live: "Check live",
 				github: "See code",
+			},
+		],
+		skills: [
+			{
+				title: "Technologies",
+				subtitle: "Here are some of the technologies I have used ",
 			},
 		],
 	},

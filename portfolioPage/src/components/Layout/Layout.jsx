@@ -20,7 +20,7 @@ export function Layout() {
 				/>
 				<Home />
 				<About />
-				<Skills />
+				<Skills language={language} />
 				<ProjectsSection language={language} />
 				<ContactForm />
 			</MainContent>
