@@ -12,6 +12,8 @@
 	font-weight: bold;
 }
 
+/* MEDIA */
+
 @media only screen and (min-width: 1500px) {
 	.footer {
 		font-size: 1.1rem;

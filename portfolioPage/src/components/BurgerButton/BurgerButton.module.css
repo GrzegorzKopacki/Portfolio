@@ -42,6 +42,8 @@
 	width: 60%;
 }
 
+/* MEDIA */
+
 @media only screen and (min-width: 1000px) {
 	.burgerButton {
 		display: none;

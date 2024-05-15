@@ -101,6 +101,8 @@
 	}
 }
 
+/* MEDIA */
+
 @media only screen and (min-width: 1000px) {
 	.projectsContent {
 		grid-template-columns: 1fr 1fr;
@@ -145,6 +147,8 @@
 	font-weight: normal;
 	font-size: 1rem;
 }
+
+/* MEDIA */
 
 @media only screen and (min-width: 1000px) {
 	.sectionTitle {
