@@ -61,16 +61,37 @@ export function ContactForm({ language }) {
 					{language === "english" ? "Name :" : "Twoje imię :"}
 				</label>
 				<input className={styles.input} type="text" name="user_name" />
-				{errors.name && <div className={styles.error}>{errors.name}</div>}
-				<label className={styles.label}>Email :</label>
+				{errors.name && (
+					<div className={styles.error}>
+						{language === "english" ? errors.name : "Twoje imię jest wymagane"}
+					</div>
+				)}
+				<label className={styles.label}>
+					{" "}
+					{language === "english" ? "Email :" : "Twój email :"}
+				</label>
 				<input className={styles.input} type="email" name="user_email" />
-				{errors.email && <div className={styles.error}>{errors.email}</div>}
+				{errors.email && (
+					<div className={styles.error}>
+						{language === "english" ? errors.email : "Twój email jest wymagany"}
+					</div>
+				)}
 				<label className={styles.label}>
 					{language === "english" ? "Message :" : "Twoja wiadomość :"}
 				</label>
 				<textarea className={styles.textarea} name="message" />
-				{errors.message && <div className={styles.error}>{errors.message}</div>}
-				<input className={styles.submit} type="submit" value="Send" />
+				{errors.message && (
+					<div className={styles.error}>
+						{language === "english"
+							? errors.message
+							: "Twoja wiadomość jest wymagana"}
+					</div>
+				)}
+				<input
+					className={styles.submit}
+					type="submit"
+					value={language === "english" ? "send" : "prześlij"}
+				/>
 			</form>
 		</div>
 	);
