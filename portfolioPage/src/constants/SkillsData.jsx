@@ -43,12 +43,7 @@ export const SKILLS = [
 		color: "#2563eb",
 		name: "React",
 	},
-	{
-		id: 13,
-		icon: <SiReactrouter />,
-		color: "#ed474a",
-		name: "React Router",
-	},
+
 	{
 		id: 6,
 		icon: <TbBrandNextjs />,
@@ -94,5 +89,4 @@ export const SKILLS = [
 		color: "#ed474a",
 		name: "Firebase",
 	},
-
 ];

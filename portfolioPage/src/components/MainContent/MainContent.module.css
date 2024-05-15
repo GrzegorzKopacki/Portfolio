@@ -1,5 +1,4 @@
 .mainContent {
 	width: 100%;
-	flex: 1;
-	/* overflow: hidden; */
+	max-width: 2000px;
 }
