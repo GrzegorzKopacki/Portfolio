@@ -6,10 +6,12 @@ export function ProjectsSection({ language }) {
 	const selectedLanguage = LANGUAGE.find((lang) => lang.language === language);
 	return (
 		<section id="projects" className={styles.projects}>
-			<div className={styles.sectionTitle}>
-				<p className={styles.sectionTitleMain}>Proj</p>
-				<span className={styles.sectionTitleSub}>ects</span>
-			</div>
+			{selectedLanguage.projectsHeader.map((titleLang, index) => (
+				<div key={index} className={styles.sectionTitle}>
+					<p className={styles.sectionTitleMain}>{titleLang.title}</p>
+					<span className={styles.sectionTitleSub}>{titleLang.subtitle}</span>
+				</div>
+			))}
 
 			<div className={styles.projectsContent}>
 				{PROJECTS.map((project) => (
