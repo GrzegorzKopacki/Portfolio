@@ -60,7 +60,7 @@
 	font-weight: bold;
 	text-align: center;
 	margin: 10rem auto 5rem auto;
-	width: 50%;
+	width: max-content;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -83,7 +83,6 @@
 @media only screen and (min-width: 1000px) {
 	.sectionTitle {
 		font-size: 1.6rem;
-		width: 25%;
 	}
 
 	.sectionTitleSub {

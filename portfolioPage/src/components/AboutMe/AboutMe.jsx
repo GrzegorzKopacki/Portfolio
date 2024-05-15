@@ -10,11 +10,10 @@ export function AboutMe({ language }) {
 				<div key={index}>
 					<div className={styles.sectionTitle}>
 						<p className={styles.sectionTitleMain}>{item.title}</p>
+						<span className={styles.sectionTitleSub}>{item.subtitle}</span>
 					</div>
 					<div className={styles.aboutContent}>
-						<p className={styles.aboutText}>
-							{item.description}
-						</p>
+						<p className={styles.aboutText}>{item.description}</p>
 						<img src={ABOUT} alt="" />
 					</div>
 				</div>
