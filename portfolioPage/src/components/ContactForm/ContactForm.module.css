@@ -49,6 +49,7 @@
 
 .label {
 	margin-top: 1rem;
+	margin-bottom: 0.5rem;
 	color: var(--textColor);
 }
 
@@ -94,8 +95,10 @@
 	font-weight: bold;
 	text-align: center;
 	margin: 10rem auto 5rem auto;
-	position: relative;
 	width: max-content;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
 .sectionTitleMain {
@@ -103,29 +106,21 @@
 	color: var(--White);
 	padding: 0.4rem;
 	border-top-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
 }
 
 .sectionTitleSub {
-	color: var(--textColor);
-}
-.sectionTitleMain::after {
-	content: "";
-	height: 1.2rem;
-	width: 1.2rem;
-	position: absolute;
-	bottom: -1.5rem;
-	right: -1.5rem;
-	background: var(--secondary);
-	border-bottom-right-radius: 0.5rem;
-	animation: 1s ease-in-out infinite alternate-reverse squareShadow;
+	color: var(--textLightColor);
+	font-weight: normal;
+	font-size: 1rem;
 }
 
-@keyframes squareShadow {
-	from {
-		box-shadow: var(--shadowAnimationStart);
+@media only screen and (min-width: 1000px) {
+	.sectionTitle {
+		font-size: 1.6rem;
 	}
 
-	to {
-		box-shadow: var(--shadowAnimationEnd);
+	.sectionTitleSub {
+		font-size: 1.2rem;
 	}
 }

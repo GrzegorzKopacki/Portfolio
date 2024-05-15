@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./ContactForm.module.css";
+import { LANGUAGE } from "../../constants/language";
 
-export function ContactForm() {
+export function ContactForm({ language }) {
 	const form = useRef();
 	const [errors, setErrors] = useState({});
 
@@ -45,20 +46,28 @@ export function ContactForm() {
 		}
 	};
 
+	const selectedLanguage = LANGUAGE.find((lang) => lang.language === language);
+
 	return (
 		<div id="contact" className={styles.formContainer}>
-			<div className={styles.sectionTitle}>
-				<p className={styles.sectionTitleMain}>Send Me A</p>
-				<span className={styles.sectionTitleSub}>Message</span>
-			</div>
+			{selectedLanguage.contact.map((titleLang, index) => (
+				<div key={index} className={styles.sectionTitle}>
+					<p className={styles.sectionTitleMain}>{titleLang.title}</p>
+					<span className={styles.sectionTitleSub}>{titleLang.subtitle}</span>
+				</div>
+			))}
 			<form className={styles.form} ref={form} onSubmit={sendEmail}>
-				<label className={styles.label}>Name</label>
+				<label className={styles.label}>
+					{language === "english" ? "Name :" : "Twoje imię :"}
+				</label>
 				<input className={styles.input} type="text" name="user_name" />
 				{errors.name && <div className={styles.error}>{errors.name}</div>}
-				<label className={styles.label}>Email</label>
+				<label className={styles.label}>Email :</label>
 				<input className={styles.input} type="email" name="user_email" />
 				{errors.email && <div className={styles.error}>{errors.email}</div>}
-				<label className={styles.label}>Message</label>
+				<label className={styles.label}>
+					{language === "english" ? "Message :" : "Twoja wiadomość :"}
+				</label>
 				<textarea className={styles.textarea} name="message" />
 				{errors.message && <div className={styles.error}>{errors.message}</div>}
 				<input className={styles.submit} type="submit" value="Send" />

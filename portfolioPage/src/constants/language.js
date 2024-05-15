@@ -38,6 +38,12 @@ export const LANGUAGE = [
 				subtitle: "Oto niektóre z technologii, których używałem ",
 			},
 		],
+		contact: [
+			{
+				title: "Kontakt",
+				subtitle: "Zapraszam do kontaktu ze mną",
+			},
+		],
 	},
 	{
 		language: "english",
@@ -74,6 +80,12 @@ export const LANGUAGE = [
 			{
 				title: "Technologies",
 				subtitle: "Here are some of the technologies I have used ",
+			},
+		],
+		contact: [
+			{
+				title: "Contact",
+				subtitle: "Feel free to get in touch with me",
 			},
 		],
 	},
