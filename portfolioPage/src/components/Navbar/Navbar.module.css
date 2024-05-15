@@ -1,17 +1,13 @@
-.header,
-.headerActive {
+.header {
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
+	gap: 10rem;
 	padding: 0.8rem 2rem;
-	position: sticky;
 	top: 0;
 	background: #232b2b;
 	z-index: 100;
 	transition: all 0.4s ease-in-out;
-}
-
-.headerActive {
-	box-shadow: rgba(212, 211, 211, 0.962) 0px 3px 5px;
 }
 
 .menu {
@@ -69,6 +65,10 @@
 		align-items: center;
 		opacity: 1;
 		transform: translateX(0);
+	}
+
+	.header {
+		position: sticky;
 	}
 
 	.menuLink {
