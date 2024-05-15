@@ -4,12 +4,12 @@
 	padding: 1rem;
 	background: rgba(24, 24, 24, 0.8);
 	color: var(--textLightColor);
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 .myname {
-   color:  #52c234;
-   font-weight: bold;
+	color: #52c234;
+	font-weight: bold;
 }
 
 @media only screen and (min-width: 1500px) {
