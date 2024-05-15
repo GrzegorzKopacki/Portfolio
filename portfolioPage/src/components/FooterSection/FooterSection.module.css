@@ -1,0 +1,19 @@
+.footer {
+	font-size: 0.8rem;
+	text-align: center;
+	padding: 1rem;
+	background: rgba(24, 24, 24, 0.8);
+	color: var(--textLightColor);
+    margin-top: 1rem;
+}
+
+.myname {
+   color:  #52c234;
+   font-weight: bold;
+}
+
+@media only screen and (min-width: 1500px) {
+	.footer {
+		font-size: 1.1rem;
+	}
+}

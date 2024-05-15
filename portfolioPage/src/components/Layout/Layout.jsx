@@ -6,6 +6,7 @@ import { Navbar } from "../Navbar/Navbar";
 import { Skills } from "../../views/Skills/Skills";
 import { ProjectsSection } from "../ProjectsSection/ProjectsSection";
 import { ContactForm } from "../ContactForm/ContactForm";
+import { Footer } from "../../views/Footer/Footer";
 
 export function Layout() {
 	const [language, setLanguage] = useState("english");
@@ -23,6 +24,7 @@ export function Layout() {
 				<Skills language={language} />
 				<ProjectsSection language={language} />
 				<ContactForm language={language} />
+				<Footer />
 			</MainContent>
 		</>
 	);
