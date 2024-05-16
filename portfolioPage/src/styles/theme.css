@@ -1,8 +1,9 @@
-body {
+:root {
 	/* Colors */
 	--White: #fff;
 	--DarkWhiteBcg: #fafafa;
 	--main: linear-gradient(to left bottom, #52c234, #48a130, #3f8a2a, #232b2b);
+	--backgroundPage: #232b2b;
 
 	--secondary: linear-gradient(
 		to right bottom,
@@ -16,31 +17,6 @@ body {
 	--textColor: #fff;
 	--textLightColor: #9e9d9d;
 
-	/* Colors Hover */
-	--mainHover: linear-gradient(
-		to left bottom,
-		#9e8fdc,
-		#9c8cdd,
-		#9989dd,
-		#9785de,
-		#9482de,
-		#977fdb,
-		#9a7cd8,
-		#9d79d5,
-		#a576ce,
-		#ab74c7,
-		#b172c0,
-		#b570b9
-	);
-	--secondaryHover: linear-gradient(
-		to right bottom,
-		rgba(252, 52, 34, 0.8235294117647058),
-		rgba(255, 0, 76, 0.796078431372549),
-		rgba(255, 0, 115, 0.7725490196078432),
-		rgba(242, 0, 153, 0.8235294117647058),
-		rgba(213, 23, 188, 0.796078431372549)
-	);
-
 	--textColorHover: #26224b;
 
 	/* Box shadow style */
@@ -48,12 +24,8 @@ body {
 
 	/* Box shadow hovers */
 	--shadowHover: rgba(143, 143, 143, 0.212) 0px 5px 15px;
+}
 
-	/* Animation states */
-	--shadowAnimationStart: rgba(82, 194, 52, 0.4) 0px 0px,
-		rgba(82, 194, 52, 0.3) 0px 0px, rgba(82, 194, 52, 0.2) 0px 0px,
-		rgba(72, 161, 48, 0.1) 0px 0px, rgba(72, 161, 48, 0.05) 0px 0px;
-	--shadowAnimationEnd: rgba(82, 194, 52, 0.4) 5px 5px,
-		rgba(82, 194, 52, 0.3) 10px 10px, rgba(82, 194, 52, 0.2) 15px 15px,
-		rgba(72, 161, 48, 0.1) 20px 20px, rgba(72, 161, 48, 0.05) 25px 25px;
+[data-theme="light"] {
+	--backgroundPage: #ffffff;
 }

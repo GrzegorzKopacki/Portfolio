@@ -10,16 +10,23 @@ import { Footer } from "../../views/Footer/Footer";
 
 export function Layout() {
 	const [language, setLanguage] = useState("english");
+	const [theme, setTheme] = useState("dark");
+
+	function handleToggleTheme() {
+		setTheme(theme === "dark" ? "light" : "dark");
+	}
+
 	return (
 		<>
-			<MainContent>
+			<MainContent dataTheme={theme}>
 				<Navbar
 					onChange={() => {
 						setLanguage(language === "english" ? "polish" : "english");
 					}}
 					language={language}
+					onClick={handleToggleTheme}
 				/>
-				<Home />
+				<Home theme={theme} />
 				<About language={language} />
 				<Skills language={language} />
 				<ProjectsSection language={language} />

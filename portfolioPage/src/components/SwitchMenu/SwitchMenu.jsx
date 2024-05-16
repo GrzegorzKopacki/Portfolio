@@ -4,17 +4,11 @@ import { BsMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
 import { LANGUAGE } from "../../constants/language";
 
-export function SwitchMenu({ onChange }) {
-	const [darkMode, setDarkMode] = useState(true);
-
+export function SwitchMenu({ onChange, onClick }) {
 	return (
 		<div className={styles.container}>
-			<button className={styles.SwitchButton}>
-				{darkMode ? (
-					<BsMoonStarsFill className={styles.darkModeIcon} />
-				) : (
-					<FaSun />
-				)}
+			<button onClick={onClick} className={styles.SwitchButton}>
+				<BsMoonStarsFill className={styles.darkModeIcon} />
 			</button>
 			<select onChange={onChange} className={styles.languageSelector}>
 				<option value={LANGUAGE.language === "english"}>English</option>

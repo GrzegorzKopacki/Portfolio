@@ -14,7 +14,7 @@ html {
 body {
 	font-size: 10px;
 	overflow-x: hidden !important;
-	background-color: #232b2b;
+	background-color: var(--backgroundPage);
 }
 
 a {
