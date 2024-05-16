@@ -28,4 +28,5 @@
 
 [data-theme="light"] {
 	--backgroundPage: #ffffff;
+	--textColor: #000000;
 }

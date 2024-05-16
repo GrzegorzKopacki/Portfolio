@@ -23,8 +23,8 @@
 
 .languageSelector {
 	cursor: pointer;
-	background: #232b2b;
-	color: #fff;
+	background: var(--backgroundPage);
+	color: var(--textColor);
 	font-weight: bold;
 	outline: none;
 	border: none;
