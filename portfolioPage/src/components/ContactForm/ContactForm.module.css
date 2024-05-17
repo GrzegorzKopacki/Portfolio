@@ -20,8 +20,8 @@
 	padding: 7px;
 	outline: none;
 	border-radius: 5px;
-	border: 1px solid var(--textLightColor);
-	background: var(--textLightColor);
+	border: 1px solid var(--borderFormColor);
+	background: var(--contactFormColor);
 	width: 50%;
 
 	&:focus {
@@ -38,9 +38,9 @@
 	padding: 7px;
 	outline: none;
 	border-radius: 5px;
-	border: 1px solid var(--textLightColor);
-	background: var(--textLightColor);
-	color: var(--textColor);
+	border: 1px solid var(--borderFormColor);
+	background: var(--contactFormColor);
+	color: var(--contactFormColor);
 
 	&:focus {
 		border: 2px solid #52c234;
