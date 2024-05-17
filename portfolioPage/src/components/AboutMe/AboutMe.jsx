@@ -1,8 +1,9 @@
 import styles from "./AboutMe.module.css";
 import ABOUT from "../../assets/About.gif";
+import ABOUTWHITE from "../../assets/AboutWhite.gif";
 import { LANGUAGE } from "../../constants/language";
 
-export function AboutMe({ language }) {
+export function AboutMe({ language, theme }) {
 	const selectedLanguage = LANGUAGE.find((lang) => lang.language === language);
 	return (
 		<section id="about" className={styles.about}>
@@ -14,7 +15,7 @@ export function AboutMe({ language }) {
 					</div>
 					<div className={styles.aboutContent}>
 						<p className={styles.aboutText}>{item.description}</p>
-						<img src={ABOUT} alt="" />
+						<img src={theme === "dark" ? ABOUT : ABOUTWHITE} alt="" />
 					</div>
 				</div>
 			))}
