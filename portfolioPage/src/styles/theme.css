@@ -29,4 +29,7 @@
 [data-theme="light"] {
 	--backgroundPage: #ffffff;
 	--textColor: #000000;
+	--shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+	--shadowHover: rgba(0, 0, 0, 0.212) 0px 5px 15px;
+	--textColor: #000;
 }
