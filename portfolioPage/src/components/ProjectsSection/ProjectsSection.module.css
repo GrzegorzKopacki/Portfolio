@@ -93,11 +93,13 @@
 	font-size: 1rem;
 	color: var(--textColor);
 	transition: all 0.3s;
-	box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 4px;
+	box-shadow: var(--shadow);
+	transition: all 0.3s;
 
 	&:hover {
 		color: #52c234;
 		box-shadow: none;
+		font-weight: bold;
 	}
 }
 
