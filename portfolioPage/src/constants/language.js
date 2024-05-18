@@ -69,6 +69,7 @@ export const LANGUAGE = [
 				live: "Check live",
 				github: "See code",
 			},
+			
 		],
 		projectsHeader: [
 			{

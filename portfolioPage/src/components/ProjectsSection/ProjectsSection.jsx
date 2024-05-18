@@ -22,11 +22,12 @@ export function ProjectsSection({ language }) {
 						<div className={styles.projectInfo}>
 							<p className={styles.projectName}>{project.title}</p>
 						</div>
-						{selectedLanguage.projects.map((projectLang, index) => (
-							<p key={index} className={styles.projectDescription}>
-								{projectLang.description}
-							</p>
-						))}
+
+						<p className={styles.projectDescription}>
+							{language === "english"
+								? project.description
+								: project.descriptionPL}
+						</p>
 
 						<div className={styles.projectTechnologies}>
 							<ul className={styles.technologiesIcons}>
