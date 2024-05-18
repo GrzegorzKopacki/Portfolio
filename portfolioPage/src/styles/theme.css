@@ -18,6 +18,7 @@
 	--textLightColor: #9e9d9d;
 	--contactFormColor: #9e9d9d;
 	--borderFormColor: #9e9d9d;
+	--footerColor: rgba(24, 24, 24, 0.8);
 
 	--textColorHover: #26224b;
 
@@ -36,4 +37,5 @@
 	--textColor: #000;
 	--contactFormColor: #e6e2e2;
 	--borderFormColor: #9e9d9d;
+	--footerColor: rgba(164, 164, 164, 0.4);
 }

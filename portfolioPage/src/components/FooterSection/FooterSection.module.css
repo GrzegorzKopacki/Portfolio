@@ -2,7 +2,7 @@
 	font-size: 0.8rem;
 	text-align: center;
 	padding: 1rem;
-	background: rgba(24, 24, 24, 0.8);
+	background: var(--footerColor);
 	color: var(--textLightColor);
 	margin-top: 1rem;
 }
