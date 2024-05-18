@@ -1,10 +1,8 @@
 :root {
-	/* Colors */
 	--White: #fff;
 	--DarkWhiteBcg: #fafafa;
 	--main: linear-gradient(to left bottom, #52c234, #48a130, #3f8a2a, #232b2b);
 	--backgroundPage: #232b2b;
-
 	--secondary: linear-gradient(
 		to right bottom,
 		#52c234,
@@ -19,13 +17,8 @@
 	--contactFormColor: #9e9d9d;
 	--borderFormColor: #9e9d9d;
 	--footerColor: rgba(24, 24, 24, 0.8);
-
 	--textColorHover: #26224b;
-
-	/* Box shadow style */
 	--shadow: rgba(255, 255, 255, 0.2) 0px 3px 5px;
-
-	/* Box shadow hovers */
 	--shadowHover: rgba(143, 143, 143, 0.212) 0px 5px 15px;
 }
 

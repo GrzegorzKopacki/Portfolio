@@ -25,6 +25,7 @@ export function Layout() {
 					}}
 					language={language}
 					onClick={handleToggleTheme}
+					theme={theme}
 				/>
 				<Home theme={theme} />
 				<About language={language} theme={theme} />
