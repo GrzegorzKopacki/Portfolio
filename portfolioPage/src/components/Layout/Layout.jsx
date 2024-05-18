@@ -7,22 +7,24 @@ import { Skills } from "../../views/Skills/Skills";
 import { ProjectsSection } from "../ProjectsSection/ProjectsSection";
 import { ContactForm } from "../ContactForm/ContactForm";
 import { Footer } from "../../views/Footer/Footer";
+import useLocalStroage from "../../hooks/useLocalStorage";
 
 export function Layout() {
-	const [language, setLanguage] = useState("english");
-	const [theme, setTheme] = useState("dark");
+	const [language, setLanguage] = useLocalStroage("language", "english");
+	const [theme, setTheme] = useLocalStroage("theme", "dark");
 
 	function handleToggleTheme() {
 		setTheme(theme === "dark" ? "light" : "dark");
+	}
+	function handleToggleLanguage() {
+		setLanguage(language === "english" ? "polish" : "english");
 	}
 
 	return (
 		<>
 			<MainContent dataTheme={theme}>
 				<Navbar
-					onChange={() => {
-						setLanguage(language === "english" ? "polish" : "english");
-					}}
+					onChange={handleToggleLanguage}
 					language={language}
 					onClick={handleToggleTheme}
 					theme={theme}

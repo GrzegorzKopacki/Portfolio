@@ -14,11 +14,4 @@ html {
 body {
 	font-size: 10px;
 	overflow-x: hidden !important;
-	background-color: var(--backgroundPage);
-}
-
-a {
-	text-decoration: none;
-	color: var(--textColor);
-	cursor: pointer;
 }

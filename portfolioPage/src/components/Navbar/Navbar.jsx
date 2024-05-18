@@ -15,7 +15,7 @@ export function Navbar({ language, onChange, onClick, theme }) {
 
 	return (
 		<div className={styles.header}>
-			<SwitchMenu theme={theme} onClick={onClick} onChange={onChange} />
+			<SwitchMenu language={language} theme={theme} onClick={onClick} onChange={onChange} />
 			<ul
 				className={navMobileisActive ? styles.menuActive : styles.menu}
 				onClick={() => setNavMobileisActive(false)}
@@ -23,7 +23,9 @@ export function Navbar({ language, onChange, onClick, theme }) {
 				{selectedLanguage &&
 					selectedLanguage.navbarItems.map((item, index) => (
 						<li className={styles.menuLink} key={index}>
-							<a href={item.link}>{item.name}</a>
+							<a className={styles.link} href={item.link}>
+								{item.name}
+							</a>
 						</li>
 					))}
 			</ul>

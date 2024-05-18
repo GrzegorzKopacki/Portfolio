@@ -14,7 +14,7 @@
 
 .darkModeIcon {
 	color: #52c234;
-	transition: all 0.3s;
+	transition: color 0.3s;
 
 	&:hover {
 		color: #3af207;
