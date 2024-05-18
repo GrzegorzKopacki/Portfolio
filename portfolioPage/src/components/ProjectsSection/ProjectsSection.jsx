@@ -38,8 +38,12 @@ export function ProjectsSection({ language }) {
 						</div>
 						{selectedLanguage.projects.map((linkLang, index) => (
 							<div className={styles.linkContainer} key={index}>
-								<a href={project.live}>{linkLang.live}</a>
-								<a href={project.github}>{linkLang.github}</a>
+								<a rel="noopener" target="_blank" href={project.live}>
+									{linkLang.live}
+								</a>
+								<a rel="noopener" target="_blank" href={project.github}>
+									{linkLang.github}
+								</a>
 							</div>
 						))}
 					</div>
