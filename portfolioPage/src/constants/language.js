@@ -13,7 +13,7 @@ export const LANGUAGE = [
 				title: "Kim jestem",
 				subtitle: "Kilka słów o mnie",
 				description:
-					"Cześć! Jestem programistą webowym, który pasjonuje się tworzeniem przyjaznych dla użytkownika i wizualnie atrakcyjnych stron internetowych. Uczę się kodowania od listopada 2022 roku i mam doświadczenie z HTML-em, CSS-em, JavaScript-em, React-em i TypeScript-em. Zawsze chętnie uczę się nowych technologii i doskonalę moje umiejętności. Wierzę, że rozwój stron internetowych to potężne narzędzie, które może być wykorzystane do tworzenia pozytywnych zmian na świecie. Jestem podekscytowany możliwością wykorzystania moich umiejętności do budowania stron, które robią różnicę. Obecnie szukam pracy jako programista frontendowy, więc jeśli sądzisz, że byłbym dobrym uzupełnieniem Twojego zespołu, proszę, nie wahaj się skontaktować. Dziękuję za poświęcony czas!",
+					"Cześć! Jako front-end developer, pasjonuję się tworzeniem intuicyjnych, wizualnie atrakcyjnych stron internetowych. Moja przygoda z programowaniem rozpoczęła się w listopadzie 2022 roku, a od tego czasu doskonaliłem swoje umiejętności w HTML, CSS, JavaScript, React, Next i TypeScript. Zawsze jestem otwarty na nowe technologie i ciągłe doskonalenie moich umiejętności.Aktualnie poszukuję interesujących możliwości związanych z front-end developmentem, i z niecierpliwością czekam na okazję, aby przynieść moją ekspertyzę i entuzjazm do dynamicznego zespołu. Jeśli szukasz kogoś, kto nie tylko pisze kod, ale jest katalizatorem innowacji, chętnie się podłączę. Dziękuję za rozważenie mojej kandydatury, i z niecierpliwością czekam na możliwość współpracy!",
 			},
 		],
 		projects: [
@@ -57,7 +57,7 @@ export const LANGUAGE = [
 				title: "Who i am",
 				subtitle: "A few words about me",
 				description:
-					"Hi there! I am a web developer who is passionate about creating user-friendly and visually appealing websites. I have been learning to code since November 2022, and I have experience with HTML, CSS, JavaScript, React, and TypeScript. I am always eager to learn new technologies and improve my skills. I believe that web development is a powerfull tool that can be used to create positive change in the world. I am excited to use my skills to build websites that make a difference. I am currently looking for a job as a frontend developer, so if you think I would be a good fit for your team, please don't hesitate to reach out. Thank you for your time!",
+					"Hello! As a frontend developer, I'm deeply passionate about crafting intuitive, visually stunning websites. My journey in coding began back in November 2022, and since then, I've honed my skills in HTML, CSS, JavaScript, React, and TypeScript. Always hungry for knowledge, I thrive on exploring new technologies and enhancing my craft.Currently on the lookout for exciting opportunities in frontend development, I'm eager to bring my expertise and enthusiasm to a dynamic team. If you're seeking someone who's not just a coder but a catalyst for innovation, I'd love to connect. Thank you for considering me, and I look forward to the possibility of working together!",
 			},
 		],
 		projects: [

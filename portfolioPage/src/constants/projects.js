@@ -1,5 +1,7 @@
 import ONE from "../assets/projectOneHero.png";
 import TWO from "../assets/Horizon.png";
+import THREE from "../assets/quizz.png";
+import FOUR from "../assets/memory.png";
 
 export const PROJECTS = [
 	{
@@ -13,7 +15,7 @@ export const PROJECTS = [
 			"Wearhouse is a web application built using React, React Router and Vite, allowing users to browse products, manage their cart and favorite items, and complete their orders. The backend of the application is based on db-json.",
 
 		descriptionPL:
-			"Moja aplikacja e-commerce to aplikacja webowa stworzona przy użyciu React, React Router i Vite, która umożliwia użytkownikom przeglądanie produktów, zarządzanie koszykiem i ulubionymi przedmiotami, oraz finalizowanie zamówień. Backend aplikacji opiera się na db-json.",
+			"Wearhouse to aplikacja webowa stworzona przy użyciu React, React Router i Vite, która umożliwia użytkownikom przeglądanie produktów, zarządzanie koszykiem i ulubionymi przedmiotami, oraz finalizowanie zamówień. Backend aplikacji opiera się na db-json.",
 	},
 	{
 		id: 2,
@@ -41,28 +43,28 @@ export const PROJECTS = [
 	},
 	{
 		id: 3,
-		title: "some title",
-		image: ONE,
-		live: "some link",
-		github: "some github",
-		technologies: ["TypeScript", "Next.js", "React", "Vite"],
+		title: "QuizzCreator App",
+		image: THREE,
+		live: "https://quizzcreator.netlify.app/",
+		github: "https://github.com/GrzegorzKopacki/QuizApp",
+		technologies: ["JavaScript", "React", "Vite", "Firebase"],
 		description:
-			"In a magical garden full of colorful flowers, three friends met: an owl, a rabbit, and a hedgehog. They talked about their dreams and plans for the future, while admiring the sunset painting the sky with pink and orange hues.",
+			"QuizzCreator is a web application built with React and Firebase, allowing users to create and take quizzes. It provides functionality for adding new questions, deleting existing questions, and summarizing quiz results.",
 
 		descriptionPL:
-			"W magicznym ogrodzie pełnym kolorowych kwiatów, spotkały się trzy przyjaciółki: sowa, zając i jeżyk. Rozmawiały o swoich marzeniach i planach na przyszłość, podziwiając jednocześnie zachód słońca malujący niebo różowymi i pomarańczowymi barwami.",
+			"QuizzCreator to aplikacja internetowa zbudowana przy użyciu React i Firebase, umożliwiająca użytkownikom tworzenie i rozwiązywanie quizów. Zapewnia funkcjonalność dodawania nowych pytań, usuwania istniejących pytań oraz podsumowywania wyników quizu.",
 	},
 	{
 		id: 4,
-		title: "some title",
-		image: ONE,
-		live: "some link",
-		github: "some github",
-		technologies: ["JavaScript", "React", "Vite"],
+		title: "Memory numbers",
+		image: FOUR,
+		live: "https://memorynumbers.netlify.app/",
+		github: "https://github.com/GrzegorzKopacki/memoryGameReact",
+		technologies: ["JavaScript", "HTML", "CSS", "React", "Vite"],
 		description:
-			"In a magical garden full of colorful flowers, three friends met: an owl, a rabbit, and a hedgehog. They talked about their dreams and plans for the future, while admiring the sunset painting the sky with pink and orange hues.",
+			"Memory Numbers is a simple card game where the player needs to find all pairs of numbers within a limited time. The game is written in React using JavaScript, HTML, and CSS.",
 
 		descriptionPL:
-			"W magicznym ogrodzie pełnym kolorowych kwiatów, spotkały się trzy przyjaciółki: sowa, zając i jeżyk. Rozmawiały o swoich marzeniach i planach na przyszłość, podziwiając jednocześnie zachód słońca malujący niebo różowymi i pomarańczowymi barwami.",
+			"Memory Numbers to prost gra, w której gracz musi odnaleźć wszystkie pary liczb w ograniczonym czasie. Gra jest napisana w React przy użyciu języków JavaScript, HTML i CSS.",
 	},
 ];

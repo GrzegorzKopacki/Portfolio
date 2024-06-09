@@ -1,7 +1,7 @@
 .aboutText {
 	font-size: 1rem;
 	padding: 1.3rem;
-	line-height: 1.6rem;
+	line-height: 2rem;
 	color: var(--textColor);
 	text-align: justify;
 }
