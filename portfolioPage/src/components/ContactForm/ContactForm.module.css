@@ -40,7 +40,7 @@
 	border-radius: 5px;
 	border: 1px solid var(--borderFormColor);
 	background: var(--contactFormColor);
-	color: var(--contactFormColor);
+	
 
 	&:focus {
 		border: 2px solid #52c234;
