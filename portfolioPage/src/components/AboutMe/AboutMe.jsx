@@ -15,7 +15,7 @@ export function AboutMe({ language, theme }) {
 					</div>
 					<div className={styles.aboutContent}>
 						<p className={styles.aboutText}>{item.description}</p>
-						<img src={theme === "dark" ? ABOUT : ABOUTWHITE} alt="" />
+						<img className={styles.aboutimg} src={theme === "dark" ? ABOUT : ABOUTWHITE} alt="" />
 					</div>
 				</div>
 			))}

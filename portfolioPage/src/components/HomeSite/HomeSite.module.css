@@ -2,7 +2,7 @@
 	margin-top: 5rem;
 }
 .homeImg {
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
 	display: block;
 }
@@ -61,10 +61,29 @@
 }
 
 /* MEDIA */
+@media only screen and (min-width: 900px) {
+	.homeImg {
+		width: 40%;
+	}
+
+	.scrollDownButton {
+		display: none;
+	}
+}
 
 @media only screen and (min-width: 1000px) {
 	.homeImg {
 		width: 40%;
+	}
+	.home {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 90%;
+		margin: 8rem auto;
+	}
+	.homeImg {
+		order: 2;
 	}
 
 	.scrollDownButton {
